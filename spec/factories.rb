@@ -12,7 +12,7 @@ FactoryBot.define do
     location
     name
     role
-    salary 0
+    salary { 0 }
   end
 
   factory :region do
@@ -21,6 +21,6 @@ FactoryBot.define do
 
   factory :role do
     name
-    billable true
+    billable { true }
   end
 end
